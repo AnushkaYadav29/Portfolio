@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoImg {
+    position: absolute;
+    top: 0px;       
+    left: 0px;       
+    width: 200px;      
+    height: auto;
+    z-index: 20;
+}
+
+.logoImg img {
+    width: 100%;
+    height: auto;
+}
+
+
+header{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10;
+}
+
+
+
+.logo{
+    color:rgb(123, 110, 110);
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+    padding-left: 100px;
+}
+
+nav a{
+    color:whitesmoke;
+    font-weight: bolder;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff3c3c;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding-left:100px;
+    /* background:#000; match with image */
+    overflow:hidden;
+}
+
+/* Your already slanted image */
+.hero img{
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:100%;
+    /* object-fit:cover; */
+    z-index:0;
+}
+
+/* Dark overlay */
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    /* background:linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2)); */
+    z-index:1;
+}
+
+/* Hero Text */
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:70px;
+    line-height:1.1;
+}
+
+.hero-content span{
+    color:#ff3c3c;
+}
+
+
+#foundingAcademy{
+    margin-bottom: 30px;
+}
+
+.foundingAca{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+}
+.imgDiv img{
+    width: 550px;
+    height: 391px;
+}
+.contentDiv{
+    padding: 30px;
+}
+.headingFounding{
+    border-left: 9px solid #B53232;
+    font-size: 50px;
+    padding-left: 5px;
+    line-height: 90%;
+}
+.contentDiv p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.secondSection{
+    
+}
+
+.secondSec{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    justify-items: center;
+    align-content: center; 
+}
+
+
+
+.secondSec a{
+    color: aliceblue;
+    margin-left: 45%;
+    font-size: 20px;
+}
+
+.playerInfo{
+    padding-left:150px;
+    padding-bottom: 20px;
+    padding-top:80px ;
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.playerInfo img{
+    
+    height: 300px;
+    width: 300px;
+}
+
+.imginfo{
+    padding: 80px;
+    margin-left: 400px;
+
+}
+
+.imginfo h1,h3{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left: 5px solid #B53232;
+}
+
+.imginfo h3{
+    color: #B53232;
+    font-size: 20px;
+}
+
+.para{
+    padding: 20px 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.red{
+    color: rgb(232, 20, 20);
+}
+
+.playerInfo-2{
+    padding-top: 10px;
+    padding-left: 150px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.playerInfo-2 img{
+    height: 300px;
+    width: 300px;
+}
+
+.playerInfo-3{
+    
+    padding-top: 50px;
+    padding-left: 150px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.playerInfo-3 img{
+    height: 300px;
+    width: 300px;
+}
+
+.thirdSec{
+    /* display: flex; 
+    padding: 20px;
+    background-image: url(./assets/Rectangle\ 6.png);
+    background-size: cover;
+    background-position: center;
+    color: white; */
+
+    /* position: relative; */
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    color: white;
+    background-image: url(./assets/Rectangle\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./assets/Rectangle\ 6.png);
+}
+
+.leftImgInfo{
+    padding: 20px;
+    margin: 80px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.rightImg{
+   
+   padding-left: 190px;
+   margin-top: 150px;
+}
+
+.rightImg img{
+    
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+/* ================= PLAYER OF WEEK ================= */
+
+.player-week{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+     background: #f2f2f2;
+}
+
+/* Slanted red background */
+.red-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    z-index: 0;
+}
+
+/* CENTER TEXT PERFECTLY */
+.player-text{
+    position: absolute;
+    top: 35%;          /* controls vertical position inside red */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 100%;
+}
+
+/* Text Styling */
+.player-text h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.player-text h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.player-text p{
+    font-size: 22px;
+}
+
+.blue{
+    color: #00A3FF;
+    font-weight: bold;
+}
+
+.red{
+    color: #ff3c3c;
+    font-weight: bold;
+}
+
+/* Player image */
+.player-img{
+    position: absolute;
+    right: 120px;
+    bottom: 0;
+    z-index: 3;
+}
+
+.player-img img{
+    height: 90vh;
+}
+
+.gallary{
+    margin-top: -120;
+    padding-left: 150px;
+     background: #f2f2f2;
+}
+
+.gallary h1{
+    border-left: 5px solid #B53232;
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(49, 44, 44);
+}
+
+.gallery-section {
+  position: relative;
+  padding: 100px 0;
+  background: #f2f2f2;
+}
+
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin: auto;
+}
+
+/* Common style */
+.img {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+/* Center Image */
+.img-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* Left Image */
+.img-left {
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Right Image */
+.img-right {
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
+.gallaryPara{
+    display: flex;
+    align-content: space-between;
+}
+
+.para1{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(88, 80, 80);
+}
+
+.para2{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(88, 80, 80);
+}
+
+.lastSec{
+    padding: 50px 60px;
+}
+
+.JoinTeam{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-content: space-evenly; */
+
+}
+
+
+
+input{
+    padding: 20px 100px;
+    border-radius: 30px;
+    width: 80%;
+}
+
+.leftinfo{
+    padding-top: 20px;
+    padding-left: 50px;
+    margin-right: 40%;
+}
+
+.leftinfo h1{
+    border-left: 5px solid #B53232;
+    margin-bottom: 50px;
+}
+
+.FootrightImg{
+    padding-left: 0;
+    margin-top: 140px;
+}
+
+
+.FootrightImg img{
+     width: 220px;
+     height: 220px;
+}
+
+
+/* Footer section */
+.footer{
+    width: 100%;
+    height: 250px;
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right:70px ;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.secondPart a{
+   text-decoration: none;
+   color: white;
+}
+
+.thirdpart i{
+    /* justify-content: space-between; */
+    font-size: 40px;
+}
+
+.redColor{
+    color: #B53232;
+
+}
+
+
