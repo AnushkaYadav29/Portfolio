@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '../assets/hero.png'
+import Anushka from '../assets/Anushka.jpeg'
 
 const Home = () => {
   return (
@@ -65,7 +65,7 @@ const Home = () => {
         
         <div className="col-md-6 text-center">
           <img 
-            src={hero} 
+            src={Anushka} 
             alt="profile" 
             style={{
               width: "80%",
