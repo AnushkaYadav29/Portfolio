@@ -64,7 +64,7 @@ const Footer = () => {
       <footer className="footer">
         {/* NAME */}
         <h2>Anushka Yadav</h2>
-        <p>Building modern web applications 🚀</p>
+        <p>Building modern web applications</p>
 
         {/* NAV LINKS */}
         <div className="footer-links">
